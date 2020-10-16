@@ -6,8 +6,9 @@
     "sourceMap": true,
     "rootDir": "src",
     "outDir": "dist",
-    "lib": [
-      "esnext", "dom"
-    ]
-  }
+    "skipLibCheck": true,
+    "typeRoots": ["node_modules/@types"],
+    "lib": ["esnext", "dom"]
+  },
+  "compileOnSave": true
 }
