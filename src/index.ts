@@ -1,14 +1,11 @@
-import { link } from "fs";
-
 const { GraphQLServer } = require("graphql-yoga");
 const { PrismaClient } = require("@prisma/client");
 
 const resolvers = {
   Query: {
     info: () => `Hello, world!`,
-    feed: () => async (parent, args, context) => {
-      const links = await context.prisma.link.findMany();
-      return links;
+    feed: async (parent, args, context) => {
+      return context.prisma.link.findMany();
     },
   },
   Mutation: {
