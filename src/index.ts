@@ -1,45 +1,16 @@
-const { GraphQLServer } = require("graphql-yoga");
-const { PrismaClient } = require("@prisma/client");
+import { GraphQLServer } from "graphql-yoga";
+import { PrismaClient } from "@prisma/client";
+
+import * as Query from "./resolvers/Query";
+import * as Mutation from "./resolvers/Mutation";
+import * as User from "./resolvers/User";
+import * as Link from "./resolvers/Link";
 
 const resolvers = {
-  Query: {
-    info: () => `Hello, world!`,
-    feed: async (parent, args, context) => {
-      return context.prisma.link.findMany();
-    },
-  },
-  Mutation: {
-    createPost: (parent, args, context, info) => {
-      const link = context.prisma.link.create({
-        data: {
-          url: args.url,
-          description: args.description,
-        },
-      });
-
-      return link;
-    },
-    updatePost: async (parent, args, context, info) => {
-      const link = await context.prisma.link.update({
-        where: { id: args.id },
-        data: {
-          url: args.url,
-          description: args.description,
-        },
-      });
-
-      return link;
-    },
-    deletePost: async (parent, args, context, info) => {
-      await prisma.link.delete({ where: { id: args.id } });
-      return "Data successfully deleted.";
-    },
-  },
-  Link: {
-    id: (parent) => parent.id,
-    description: (parent) => parent.description,
-    url: (parent) => parent.url,
-  },
+  Query,
+  Mutation,
+  User,
+  Link,
 };
 
 const prisma = new PrismaClient();
@@ -47,8 +18,11 @@ const prisma = new PrismaClient();
 const server = new GraphQLServer({
   typeDefs: "./src/schema.graphql",
   resolvers,
-  context: {
-    prisma,
+  context: (request) => {
+    return {
+      ...request,
+      prisma,
+    };
   },
 });
 
