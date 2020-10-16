@@ -1,49 +1,41 @@
-import { url } from "inspector";
+import { link } from "fs";
 
 const { GraphQLServer } = require("graphql-yoga");
+const { PrismaClient } = require("@prisma/client");
 
-let links = [
-  {
-    id: "link-0",
-    description: "Lorem ipsum dolor sit amet.",
-    url: "https://github.com/ayungavis/graphql-learn",
-  },
-];
-
-let idCount = links.length;
 const resolvers = {
   Query: {
     info: () => `Hello, world!`,
-    feed: () => links,
+    feed: () => async (parent, args, context) => {
+      const links = await context.prisma.link.findMany();
+      return links;
+    },
   },
   Mutation: {
-    createPost: (parent, args) => {
-      const link = {
-        id: `link-${idCount++}`,
-        description: args.description,
-        url: args.url,
-      };
+    createPost: (parent, args, context, info) => {
+      const link = context.prisma.link.create({
+        data: {
+          url: args.url,
+          description: args.description,
+        },
+      });
 
-      links.push(link);
       return link;
     },
-    updatePost: (parent, args) => {
-      const index = links.findIndex((item) => item.id === args.id);
-      const item = links.find((item) => item.id === args.id);
-      const result = {
-        ...item,
-        url: args.url,
-        description: args.description,
-      };
+    updatePost: async (parent, args, context, info) => {
+      const link = await context.prisma.link.update({
+        where: { id: args.id },
+        data: {
+          url: args.url,
+          description: args.description,
+        },
+      });
 
-      links.splice(index, 1);
-      links.push(result);
-      return result;
+      return link;
     },
-    deletePost: (parent, args) => {
-      const index = links.findIndex((item) => item.id === args.id);
-      links.splice(index, 1);
-      return `Link successfully deleted!`;
+    deletePost: async (parent, args, context, info) => {
+      await prisma.link.delete({ where: { id: args.id } });
+      return "Data successfully deleted.";
     },
   },
   Link: {
@@ -53,9 +45,14 @@ const resolvers = {
   },
 };
 
+const prisma = new PrismaClient();
+
 const server = new GraphQLServer({
   typeDefs: "./src/schema.graphql",
   resolvers,
+  context: {
+    prisma,
+  },
 });
 
 server.start(() => console.log(`Server is running on http://localhost:4000`));
