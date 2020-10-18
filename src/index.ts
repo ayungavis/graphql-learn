@@ -6,6 +6,7 @@ import * as Mutation from "./resolvers/Mutation";
 import * as Subscription from "./resolvers/Subscription";
 import * as User from "./resolvers/User";
 import * as Link from "./resolvers/Link";
+import * as Vote from "./resolvers/Vote";
 
 const resolvers = {
   Query,
@@ -13,6 +14,7 @@ const resolvers = {
   Subscription,
   User,
   Link,
+  Vote,
 };
 
 const prisma = new PrismaClient();

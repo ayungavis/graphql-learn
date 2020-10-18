@@ -8,3 +8,14 @@ export const newLink = {
     return payload;
   },
 };
+
+function newVoteSubscribe(parent, args, context, info) {
+  return context.pubsub.asyncIterator("NEW_VOTE");
+}
+
+export const newVote = {
+  subscribe: newVoteSubscribe,
+  resolve: (payload) => {
+    return payload;
+  },
+};
