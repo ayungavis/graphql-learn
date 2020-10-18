@@ -1,6 +1,6 @@
 datasource db {
   provider = "mysql"
-  url      = "mysql://root:@localhost:3306/getzke"
+  url      = "mysql://graphql_learn:kaGE8ZBByrkwmPMT@139.59.218.12:3306/graphql_learn"
 }
 
 generator client {
