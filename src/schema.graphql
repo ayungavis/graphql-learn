@@ -12,6 +12,10 @@ type Mutation {
   deletePost(id: Int!): String!
 }
 
+type Subscription {
+  newLink: Link
+}
+
 type Link {
   id: Int!
   description: String!
