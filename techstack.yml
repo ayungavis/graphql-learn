@@ -1,7 +1,7 @@
 repo_name: ayungavis/graphql-learn
-report_id: d6774d43aae59b3918c233377ae4f273
+report_id: 3913c92b33744b637794ad3c3c3559d0
 repo_type: Public
-timestamp: '2023-11-24T02:06:19+00:00'
+timestamp: '2023-12-14T13:20:57+00:00'
 requested_by: ayungavis
 provider: github
 branch: master
@@ -119,7 +119,7 @@ tools:
   category: Monitoring
   sub_category: node.js Application Monitoring
   image_url: https://img.stackshare.io/service/5577/preview.png
-  detection_source_url: yarn.lock
+  detection_source_url: https://github.com/ayungavis/graphql-learn/blob/master/yarn.lock
   detection_source: package.json
   last_updated_by: Wahyu Adi Kurniawan
   last_updated_on: 2020-10-16 16:34:41.000000000 Z
@@ -144,7 +144,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15809/default_5e5e8ac63beda29f31f1844df64d4b8247570a66.png
-  detection_source_url: yarn.lock
+  detection_source_url: https://github.com/ayungavis/graphql-learn/blob/master/yarn.lock
   detection_source: package.json
   last_updated_by: Wahyu Adi Kurniawan
   last_updated_on: 2020-10-16 16:34:41.000000000 Z
@@ -158,7 +158,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16857/default_627f05e6a07ce29fc9f119417270f38e8aa5c5e2.png
-  detection_source_url: yarn.lock
+  detection_source_url: https://github.com/ayungavis/graphql-learn/blob/master/yarn.lock
   detection_source: package.json
   last_updated_by: Wahyu Adi Kurniawan
   last_updated_on: 2020-10-16 16:34:41.000000000 Z
@@ -172,7 +172,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16155/default_77b54a203c743d16eddb6b6390cba17218454fa0.png
-  detection_source_url: yarn.lock
+  detection_source_url: https://github.com/ayungavis/graphql-learn/blob/master/yarn.lock
   detection_source: package.json
   last_updated_by: Wahyu Adi Kurniawan
   last_updated_on: 2020-10-16 16:34:41.000000000 Z
@@ -213,7 +213,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15830/default_6743ba96cf149a3c3c68a185199f9705d6eff80e.png
-  detection_source_url: yarn.lock
+  detection_source_url: https://github.com/ayungavis/graphql-learn/blob/master/yarn.lock
   detection_source: package.json
   last_updated_by: Wahyu Adi Kurniawan
   last_updated_on: 2020-10-16 16:34:41.000000000 Z
