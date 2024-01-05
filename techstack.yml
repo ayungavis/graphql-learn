@@ -1,7 +1,8 @@
 repo_name: ayungavis/graphql-learn
-report_id: 3913c92b33744b637794ad3c3c3559d0
+report_id: d6774d43aae59b3918c233377ae4f273
+version: 0.1
 repo_type: Public
-timestamp: '2023-12-14T13:20:57+00:00'
+timestamp: '2024-01-05T08:34:07+00:00'
 requested_by: ayungavis
 provider: github
 branch: master
@@ -16,6 +17,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/ayungavis/graphql-learn/blob/master/package.json
   detection_source: package.json
   last_updated_by: Wahyu Adi Kurniawan
   last_updated_on: 2020-09-27 04:48:15.000000000 Z
@@ -28,6 +30,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1612/bynNY5dJ.jpg
+  detection_source_url: https://github.com/ayungavis/graphql-learn
   detection_source: Repo Metadata
 - name: Node.js
   description: A platform built on Chrome's JavaScript runtime for easily building
@@ -38,6 +41,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Frameworks (Full Stack)
   image_url: https://img.stackshare.io/service/1011/n1JRsFeB_400x400.png
+  detection_source_url: https://github.com/ayungavis/graphql-learn/blob/master/package.json
   detection_source: package.json
   last_updated_by: Wahyu Adi Kurniawan
   last_updated_on: 2020-09-27 04:48:15.000000000 Z
@@ -49,6 +53,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Query Languages
   image_url: https://img.stackshare.io/service/3820/12972006.png
+  detection_source_url: https://github.com/ayungavis/graphql-learn/blob/master/src/schema.graphql
   detection_source: src/schema.graphql
   last_updated_by: Wahyu Adi Kurniawan
   last_updated_on: 2020-09-27 05:17:20.000000000 Z
@@ -61,6 +66,7 @@ tools:
   category: Data Stores
   sub_category: Object Relational Mapper (ORM)
   image_url: https://img.stackshare.io/service/8680/Logo_Symbol_White.jpg
+  detection_source_url: https://github.com/ayungavis/graphql-learn/blob/master/package.json
   detection_source: package.json
   last_updated_by: Wahyu Adi Kurniawan
   last_updated_on: 2020-10-16 16:34:41.000000000 Z
@@ -74,6 +80,7 @@ tools:
   category: Languages & Frameworks
   sub_category: GraphQL Tools
   image_url: https://img.stackshare.io/service/9556/68747470733a2f2f696d6775722e636f6d2f5376366a3042362e706e67.png
+  detection_source_url: https://github.com/ayungavis/graphql-learn/blob/master/package.json
   detection_source: package.json
   last_updated_by: Wahyu Adi Kurniawan
   last_updated_on: 2020-10-16 16:34:41.000000000 Z
@@ -86,6 +93,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Server Configuration and Automation
   image_url: https://img.stackshare.io/service/8067/default_90dcb1286af7685c68df319c764b80704df1155b.png
+  detection_source_url: https://github.com/ayungavis/graphql-learn/blob/master/package.json
   detection_source: package.json
   last_updated_by: Wahyu Adi Kurniawan
   last_updated_on: 2020-09-27 04:48:15.000000000 Z
@@ -97,6 +105,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Version Control System
   image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/ayungavis/graphql-learn
   detection_source: Repo Metadata
 - name: Yarn
   description: A new package manager for JavaScript
@@ -106,6 +115,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Front End Package Manager
   image_url: https://img.stackshare.io/service/5848/44mC-kJ3.jpg
+  detection_source_url: https://github.com/ayungavis/graphql-learn/blob/master/yarn.lock
   detection_source: yarn.lock
   last_updated_by: Wahyu Adi Kurniawan
   last_updated_on: 2020-09-27 04:48:15.000000000 Z
@@ -131,6 +141,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Front End Package Manager
   image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source_url: https://github.com/ayungavis/graphql-learn/blob/master/package.json
   detection_source: package.json
   last_updated_by: Wahyu Adi Kurniawan
   last_updated_on: 2020-09-27 04:48:15.000000000 Z
